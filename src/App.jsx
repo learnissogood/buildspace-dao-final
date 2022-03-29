@@ -11,11 +11,11 @@ const App = () => {
   console.log("👋 Address:", address);
 
   // Initialize our editionDrop contract
-  const editionDrop = useEditionDrop("INSERT_EDITION_DROP_ADDRESS");
+  const editionDrop = useEditionDrop("0x92d1cC1053879aFf58e5a9335efE188FAfbCAdE2");
   // Initialize our token contract
-  const token = useToken("INSERT_TOKEN_ADDRESS")
+  const token = useToken("0x13d62B850849c43D2E4D7e798Abe34393ACDAD4b")
   // Initialize our vote contract
-  const vote = useVote("INSERT_VOTE_ADDRESS");
+  const vote = useVote("0x628960cC15E01Fa3187f4F2134151E17c56BDE03");
 
   // State variable for us to know if user has our NFT.
   const [hasClaimedNFT, setHasClaimedNFT] = useState(false);
@@ -180,7 +180,7 @@ const App = () => {
   if (!address) {
     return (
       <div className="landing">
-        <h1>Welcome to NarutoDAO</h1>
+        <h1>Welcome to UkraineDAO</h1>
         <button onClick={connectWithMetamask} className="btn-hero">
           Connect your wallet
         </button>
