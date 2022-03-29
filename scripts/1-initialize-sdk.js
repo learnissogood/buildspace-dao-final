@@ -30,7 +30,7 @@ const sdk = new ThirdwebSDK(
 (async () => {
   try {
     const address = await sdk.getSigner().getAddress();
-    console.log("👋 SDK initialized by address:", address)
+    console.log("SDK initialized by address:", address)
   } catch (err) {
     console.error("Failed to get apps from the sdk", err);
     process.exit(1);
