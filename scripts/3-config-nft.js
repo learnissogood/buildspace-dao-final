@@ -7,9 +7,9 @@ const editionDrop = sdk.getEditionDrop("0x92d1cC1053879aFf58e5a9335efE188FAfbCAd
   try {
     await editionDrop.createBatch([
       {
-        name: "Leaf Village Headband",
-        description: "This NFT will give you access to NarutoDAO!",
-        image: readFileSync("scripts/assets/headband.png"),
+        name: "Peace Symbol",
+        description: "This NFT will give you access to UkraineDAO!",
+        image: readFileSync("scripts/assets/peacemaker.jpg"),
       },
     ]);
     console.log("✅ Successfully created a new NFT in the drop!");
